@@ -1,8 +1,8 @@
 const express = require('express');
-const cors = require('cors')
+const cors = require('cors');
 
 const app = express();
-app.use(cors())
+app.use(cors());
 
 app.get('/', (req, res) => {
     res.send(`
@@ -28,20 +28,42 @@ app.get('/', (req, res) => {
                     border-radius: 8px;
                     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
                     text-align: center;
+                    max-width: 500px;
                 }
                 h1 {
                     color: #0078d4;
+                    margin-bottom: 0.5rem;
+                }
+                h2 {
+                    color: #333;
+                    margin-bottom: 1rem;
                 }
                 p {
-                    color: #333;
+                    color: #555;
+                    line-height: 1.4;
                 }
             </style>
         </head>
         <body>
             <div class="container">
-                <h1>Hello from Node.js app!</h1>
-                <h2>CI/CD & Reverese Proxy Lab Node.js App</h2>
-                <p>Your server is running and serving a styled page.</p>
+                <h1>🚀 Node.js App Deployed!</h1>
+                <h2>CI/CD & Reverse Proxy Lab</h2>
+                <p>
+                    This Node.js application has been successfully deployed as part of your CI/CD and reverse proxy lab.
+                    It is running behind Nginx and serves a styled HTML page.
+                </p>
+                <p>
+                    You have learned to:
+                    <ul style="text-align: left; margin: 1rem auto; max-width: 400px;">
+                        <li>Set up a Node.js server with Express</li>
+                        <li>Style and serve a test page</li>
+                        <li>Configure Nginx as a reverse proxy</li>
+                        <li>Automate deployment using CI/CD pipelines</li>
+                    </ul>
+                </p>
+                <p>
+                    You can continue to enhance this app, connect it to a database, or containerize it for scalable deployments.
+                </p>
             </div>
         </body>
         </html>
