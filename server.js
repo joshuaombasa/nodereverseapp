@@ -40,6 +40,7 @@ app.get('/', (req, res) => {
         <body>
             <div class="container">
                 <h1>Hello from Node.js app!</h1>
+                <h2>CI/CD & Reverese Proxy Lab Node.js App</h2>
                 <p>Your server is running and serving a styled page.</p>
             </div>
         </body>
