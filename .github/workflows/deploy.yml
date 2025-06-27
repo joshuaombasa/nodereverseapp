@@ -22,6 +22,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no azureuser@172.174.94.105 << 'EOF'
             cd ~/app
-            git pull origin main
+            git fetch --all
+            git reset --hard origin/main
             pm2 restart server
           EOF
